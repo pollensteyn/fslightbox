@@ -55,7 +55,7 @@
   justify-content: center;
   align-items: center; }
 
-.hidden {
+.fslightbox-hidden {
   display: none; }
 
 .fslightbox-opacity-0 {
@@ -71,7 +71,6 @@
   transition: transform .3s; }
 
 .fslightbox-container {
-  font-family: sans-serif;
   position: fixed;
   top: 0;
   left: 0;
@@ -87,7 +86,7 @@
 
 .fslightbox-svg-path {
   transition: fill .15s ease;
-  fill: #ddd; }
+  fill: #fff; }
 
 .fslightbox-nav {
   height: 45px;
@@ -99,9 +98,10 @@
 .fslightbox-slide-number-container {
   height: 100%;
   font-size: 14px;
-  color: #d7d7d7;
+  color: #fff;
   z-index: 0;
-  max-width: 55px; }
+  max-width: 55px;
+  background: rgba(210, 58, 50, 0.9); }
   .fslightbox-slide-number-container div {
     padding: 0 1.5px; }
 
@@ -116,7 +116,7 @@
   top: 0;
   height: 100%;
   display: flex;
-  background: rgba(35, 35, 35, 0.65); }
+  background: rgba(210, 58, 50, 0.9); }
 
 .fslightbox-toolbar-button {
   height: 100%;
@@ -148,7 +148,7 @@
 .fslightbox-slide-btn {
   padding: 9px;
   font-size: 26px;
-  background: rgba(210, 58, 50, 0.65); }
+  background: rgba(210, 58, 50, 0.9); }
   @media (min-width: 768px) {
     .fslightbox-slide-btn {
       padding: 10px; } }
