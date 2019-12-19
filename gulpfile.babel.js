@@ -45,7 +45,8 @@ function reload(done) {
 
 const watch = gulp.series(serve, devCSS, watchFilesChanges);
 const production = gulp.series(buildCSS);
+const dev = gulp.series(devCSS);
 
-export { watch, production }
+export { watch, production, dev }
 
 export default production;

@@ -55,9 +55,6 @@
   justify-content: center;
   align-items: center; }
 
-.fslightbox-hidden {
-  display: none; }
-
 .fslightbox-opacity-0 {
   opacity: 0 !important; }
 
@@ -93,21 +90,23 @@
   width: 100%;
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  z-index: 3; }
 
 .fslightbox-slide-number-container {
   height: 100%;
-  font-size: 14px;
-  color: #fff;
+  font-size: 15px;
+  color: #d7d7d7;
   z-index: 0;
   max-width: 55px;
   background: rgba(210, 58, 50, 0.9); }
   .fslightbox-slide-number-container div {
-    padding: 0 1.5px; }
+    padding: 0 2px; }
 
 .fslightbox-slash {
-  margin-top: -1.5px;
-  font-size: 16px; }
+  margin-top: 2px;
+  font-size: 16px;
+  font-weight: 500; }
 
 .fslightbox-toolbar {
   position: absolute;
@@ -135,6 +134,9 @@
   cursor: pointer;
   z-index: 3;
   transform: translateY(-50%); }
+  @media (max-width: 475.99px) {
+    .fslightbox-slide-btn-container {
+      display: none; } }
   @media (min-width: 476px) {
     .fslightbox-slide-btn-container {
       padding: 22px 22px 22px 6px; } }
